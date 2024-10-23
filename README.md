@@ -27,7 +27,7 @@ Create a REST API using Node.js and Express.js to manage tasks.
     [https://github.com/Shazam72/to-do-list](https://github.com/Shazam72/to-do-list)
 
 ### Deadline
-The project is to be completed **before****Friday, October 25 2024 at 10:30 AM** 
+The project is to be completed **before** **Friday, October 25 2024 at 10:30 AM** 
 
 ### Interview
 
