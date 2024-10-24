@@ -2,11 +2,36 @@
 
 import { Tasks } from '@/components/task';
 import { TaskInput } from '@/components/taskInput';
+import axios from 'axios';
 import { Search } from 'lucide-react';
-import { useState } from 'react';
+import { FormEventHandler, useState } from 'react';
 
 export default function Home() {
   const [filtering, setFiltering] = useState('');
+
+  const submitForm: FormEventHandler<HTMLFormElement> = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const jsonBody = JSON.stringify({ title: formData.get('task') });
+    console.log(jsonBody);
+
+    try {
+      const response = await axios.post('http://localhost:3050/tasks', {
+        title: formData.get('task'),
+      });
+
+      console.log('Requête réussie:', response.status);
+      if (response.status === 201 || response.status === 200) {
+        window.location.reload();
+      } else {
+        alert('Une erreur est survenue lors de la création de la tâche.');
+      }
+    } catch (error) {
+      console.error('Erreur de la requête:', error);
+      alert(error);
+    }
+  };
+
 
   return (
     <div className=' w-full h-screen overflow-scroll'>
@@ -18,7 +43,7 @@ export default function Home() {
           You can add all your tasks here to manage them. Let&apos;s see how you
           can grow your productivity
         </p>
-        <div className='rounded-lg w-[60%] mx-auto mt-6 p-3 flex gap-x-2 bg-zinc-900 items-center'>
+        <div className='rounded-lg w-[60%] mx-auto mt-6 p-3 flex gap-x-2 bg-gray-900 items-center'>
           <Search color='#f1f1f1' />
           <input
             type='search'
@@ -29,7 +54,7 @@ export default function Home() {
             placeholder='Search something...'
           />
         </div>
-        <TaskInput />
+        <TaskInput submitForm={submitForm} />
         <Tasks filtering={filtering.length > 1 ? filtering : undefined} />
       </div>
     </div>
