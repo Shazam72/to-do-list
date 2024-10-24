@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The TODO App
 
-## Getting Started
+Here is the implementation of the front web application  of the Todo App test. It has been written in two directory which contains respectivly the `front` in the *todo* folder and the `api server` in the *api* folder.
 
-First, run the development server:
+## Technologies
+
+The basic technology in the project is `typeScript` based on the `node JS` runtime.  
+The front uses **Next JS** to generate the interface conbing the **tailwind CSS** support and somees puglings.  
+The server uses **express.js** and expose routes in a `REST API` that hydrate the front data.
+
+## How to setup?
+
+The project is supported by the `pnpm` package manager and `deno` runtime. But you can use another package manager to *setup*, *run* or *deploy* the project.  
+At first you will need to navigqte to one of the following directory before running the development script
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+    ├── api 
+    └── todo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To set up a project dependencies run;
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+    npm install
+    #or
+    pnpm install
+    #or
+    deno install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+according to which package manager you want to use.  
+In the `api` directory if you want too launch the server run
 
-## Learn More
+```bash
+    pnpm serve
+    #or
+    npm run serve
+    #or
+    deno task serve
+```
 
-To learn more about Next.js, take a look at the following resources:
+> the types are not linted before the server starts
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To launch the client server run the following command
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+    pnpm dev
+    #or
+    npm run dev
+    #or
+    deno task dev
+```
