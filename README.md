@@ -28,7 +28,7 @@ Créer une API REST en utilisant Node.js et Express.js pour gérer les tâches.
     [https://github.com/Shazam72/to-do-list](https://github.com/Shazam72/to-do-list)
 
 ### Délai
-Le projet doit être terminé **avant le vendredi 25 octobre 2024 à 10h30**.
+Le projet doit être terminé **avant le vendredi 25 octobre 2024 à 14h30**.
 
 ## Procédure de contribution au projet
 
@@ -91,7 +91,7 @@ Le projet doit être terminé **avant le vendredi 25 octobre 2024 à 10h30**.
 
 ## Entretien
 
-Un entretien technique aura lieu le **Jeudi 14 novembre 2024 à 10h30** au siège de Legrand WEB Services à Nagrin, Ouagadougou.
+Un entretien technique aura lieu le **Jeudi 14 novembre 2024 à 14h30** au siège de Legrand WEB Services à Nagrin, Ouagadougou.
 
 Nous discuterons des points suivants :
   - Les technologies front-end et back-end utilisées.
