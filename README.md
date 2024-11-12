@@ -28,11 +28,70 @@ Créer une API REST en utilisant Node.js et Express.js pour gérer les tâches.
     [https://github.com/Shazam72/to-do-list](https://github.com/Shazam72/to-do-list)
 
 ### Délai
-Le projet doit être terminé **avant le Jeudi 14 Novembre 2024 à 14h30**.
+Le projet doit être terminé **avant le vendredi 25 octobre 2024 à 10h30**.
 
-### Entretien
+## Procédure de contribution au projet
 
-Un entretien technique aura lieu le **Jeudi 14 Novembre 2024 à 14h30** au siège de Legrand WEB Services à Nagrin, Ouagadougou.
+### 1. Fork du projet
+  - Allez sur le dépôt GitHub du projet : [https://github.com/Shazam72/to-do-list](https://github.com/Shazam72/to-do-list).
+  - Cliquez sur le bouton **Fork** en haut à droite pour créer une copie du dépôt sur votre propre compte GitHub.
+
+### 2. Clone du dépôt
+  - Clonez votre fork localement en utilisant la commande suivante dans votre terminal :
+    ```bash
+    git clone https://github.com/votre-nom-d-utilisateur/to-do-list.git
+    ```
+  - Accédez au répertoire du projet :
+    ```bash
+    cd to-do-list
+    ```
+
+### 3. Créez une nouvelle branche
+  - Avant de commencer à travailler sur une fonctionnalité, créez une nouvelle branche pour vos modifications :
+    ```bash
+    git checkout -b nom-de-votre-branche
+    ```
+
+### 4. Développer les fonctionnalités
+  - Travaillez sur les fonctionnalités assignées dans le projet (front-end, back-end, base de données, etc.).
+  - N'oubliez pas de tester vos modifications en local avant de les valider.
+
+### 5. Commiter les modifications
+  - Ajoutez vos fichiers modifiés à l'index Git :
+    ```bash
+    git add .
+    ```
+  - Créez un commit avec un message clair et descriptif :
+    ```bash
+    git commit -m "Description de votre modification"
+    ```
+
+### 6. Push vers GitHub
+  - Poussez vos modifications sur votre fork GitHub :
+    ```bash
+    git push origin nom-de-votre-branche
+    ```
+
+### 7. Créer une Pull Request
+  - Une fois vos modifications poussées sur GitHub, ouvrez une **Pull Request** (PR) pour proposer vos changements au dépôt principal.
+  - Allez sur la page de votre fork et cliquez sur le bouton **Compare & pull request**.
+  - Ajoutez une description détaillée de ce que vous avez changé et pourquoi, puis soumettez la PR pour révision.
+
+### 8. Révision et fusion
+  - Le responsable du projet examinera votre Pull Request et pourra demander des modifications supplémentaires si nécessaire.
+  - Une fois validée, votre PR sera fusionnée dans le dépôt principal.
+
+### 9. Synchronisation avec le dépôt principal
+  - N'oubliez pas de synchroniser votre fork avec le dépôt principal avant de commencer de nouvelles tâches. Utilisez les commandes suivantes :
+    ```bash
+    git remote add upstream https://github.com/Shazam72/to-do-list.git
+    git fetch upstream
+    git merge upstream/main
+    ```
+
+## Entretien
+
+Un entretien technique aura lieu le **Jeudi 14 novembre 2024 à 10h30** au siège de Legrand WEB Services à Nagrin, Ouagadougou.
 
 Nous discuterons des points suivants :
   - Les technologies front-end et back-end utilisées.
