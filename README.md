@@ -7,20 +7,24 @@ Créer une application simple de gestion de tâches (To-Do List) avec une API RE
 
 ### Front-End :
 Construire une interface simple pour afficher une liste de tâches.
-  - Permettre aux utilisateurs d'ajouter, de supprimer et de marquer des tâches comme complètes.
-  - Utiliser un framework comme React.
+  - Permettre aux utilisateurs d'ajouter, de supprimer, modifier et de marquer des tâches comme complètes.
+  - Les taches peuvent comporter des bannières
+  - Utiliser le framework React.
 
 ### Back-End :
-Créer une API REST en utilisant Node.js et Express.js pour gérer les tâches.
+Créer une API REST en utilisant Laravel pour gérer les tâches.
   - Points d'API à créer :
+    - **POST /register** : Création de compte
+    - **POST /login** : Authentification
     - **GET /tasks** : Récupérer toutes les tâches.
     - **POST /tasks** : Ajouter une nouvelle tâche.
     - **DELETE /tasks/:id** : Supprimer une tâche par son ID.
     - **PUT /tasks/:id** : Mettre à jour le statut d'une tâche.
+  - Intégrer la gestion d'images commes des bannières pour les tâches
   
 ### Base de données :
-  - Utiliser une base de données (par exemple MongoDB ou PostgreSQL) pour stocker les tâches.
-  - Écrire le schéma pour la base de données si nécessaire.
+  - Utiliser une base de données (par exemple MySQL ou PostgreSQL ou MongoDB) pour stocker les tâches.
+  - Écrire les modèles et migrations pour la base de données si nécessaire.
 
 ### Contrôle de version :
   - Utiliser Git pour le contrôle de version.
@@ -28,7 +32,7 @@ Créer une API REST en utilisant Node.js et Express.js pour gérer les tâches.
     [https://github.com/Shazam72/to-do-list](https://github.com/Shazam72/to-do-list)
 
 ### Délai
-Le projet doit être terminé **avant le vendredi 25 octobre 2024 à 14h30**.
+Le projet doit être terminé **avant le Jeudi 21 novembre 2024 à 11h30**.
 
 ## Procédure de contribution au projet
 
@@ -75,7 +79,7 @@ Le projet doit être terminé **avant le vendredi 25 octobre 2024 à 14h30**.
 ### 7. Créer une Pull Request
   - Une fois vos modifications poussées sur GitHub, ouvrez une **Pull Request** (PR) pour proposer vos changements au dépôt principal.
   - Allez sur la page de votre fork et cliquez sur le bouton **Compare & pull request**.
-  - Ajoutez une description détaillée de ce que vous avez changé et pourquoi, puis soumettez la PR pour révision.
+  - Ajoutez une description détaillée, puis soumettez la PR pour révision.
 
 ### 8. Révision et fusion
   - Le responsable du projet examinera votre Pull Request et pourra demander des modifications supplémentaires si nécessaire.
@@ -91,7 +95,7 @@ Le projet doit être terminé **avant le vendredi 25 octobre 2024 à 14h30**.
 
 ## Entretien
 
-Un entretien technique aura lieu le **Jeudi 14 novembre 2024 à 14h30** au siège de Legrand WEB Services à Nagrin, Ouagadougou.
+Un entretien technique aura lieu le **Jeudi 21 novembre 2024 à 14h30** au siège de Legrand WEB Services à Nagrin, Ouagadougou.
 
 Nous discuterons des points suivants :
   - Les technologies front-end et back-end utilisées.
@@ -99,4 +103,3 @@ Nous discuterons des points suivants :
   - Les points d'API REST créés et les choix de conception qui ont guidé leur création.
   - L'évaluation des fonctionnalités principales de l'application, notamment la gestion des tâches (ajout, suppression, marquage comme complètes).
   - L'examen de l'historique des commits Git dans le dépôt GitHub et l'organisation des commits.
-  - Les prochaines étapes.
